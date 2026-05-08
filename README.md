@@ -11,7 +11,7 @@ Halo! Saya **Fijaya Samsudin**. Repository ini adalah bukti perjalanan saya mend
 
 ## Progress Saat Ini:
 - [x] Setup GitHub & Git Local
-- [ ] Configure AWS VPC (Next Step)
+- [x] Configure AWS VPC (Next Step)
 
 
 ### 08 Mei 2026: Identity and Access Management (IAM) & Security
