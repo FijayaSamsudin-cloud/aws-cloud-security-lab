@@ -16,6 +16,6 @@ Halo! Saya **Fijaya Samsudin**. Repository ini adalah bukti perjalanan saya mend
 
 ### 08 Mei 2026: Identity and Access Management (IAM)
 - [x] Mengecek Billing Dashboard (Memastikan Free Tier aktif).
-- [ ] Membuat IAM User Admin untuk menghindari penggunaan Root Account (Best Practice).
-
+- [x] Membuat IAM User Admin untuk menghindari penggunaan Root Account (Best Practice).
+- [x] Berhasil login menggunakan user `fijaya-admin` dengan akses Administrator.
 
