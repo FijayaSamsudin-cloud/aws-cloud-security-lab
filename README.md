@@ -28,3 +28,10 @@ Halo! Saya **Fijaya Samsudin**. Repository ini adalah bukti perjalanan saya mend
     - 2 Private Subnets (untuk resource internal/database agar lebih aman).
 - [x] **Cost Optimization**: Memilih untuk tidak menggunakan NAT Gateway guna menghemat biaya operasional selama fase belajar.
 - [x] **Security Enhancement**: Mengaktifkan **S3 Gateway Endpoint**, memungkinkan akses ke layanan S3 secara privat tanpa melalui internet publik.
+
+
+### 09 Mei 2026: Security Groups (Firewall)
+- [x] Membuat Security Group `SG-Web-Server-Fijaya` di dalam VPC Proyek.
+- [x] Konfigurasi Inbound: Membatasi SSH hanya untuk IP pribadi (Security Hardening).
+- [x] Konfigurasi Inbound: Membuka akses HTTP untuk publik.
+- [x] Memahami filosofi Stateful Firewall pada AWS Security Groups.
