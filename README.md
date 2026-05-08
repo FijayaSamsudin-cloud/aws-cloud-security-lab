@@ -11,7 +11,9 @@ Halo! Saya **Fijaya Samsudin**. Repository ini adalah bukti perjalanan saya mend
 
 ## Progress Saat Ini:
 - [x] Setup GitHub & Git Local
-- [x] Configure AWS VPC (Next Step)
+- [x] Configure AWS VPC (Completed)
+- [x] Security Group Hardening (Completed)
+- [ ] Deploy EC2 Instance (Next Step)
 
 
 ### 08 Mei 2026: Identity and Access Management (IAM) & Security
@@ -31,9 +33,11 @@ Halo! Saya **Fijaya Samsudin**. Repository ini adalah bukti perjalanan saya mend
 
 
 ### 09 Mei 2026: Security Hardening & Firewall Infrastructure
-- [x] Mendapatkan AWS Credits US$119.97 (Siap untuk lab jangka panjang).
-- [x] Deployment VPC Multi-AZ dengan arsitektur Tiered Subnet (Public & Private).
-- [x] Implementasi S3 Gateway Endpoint (Data Security).
-- [x] Membuat Stateful Firewall (Security Group) `SG-Web-Server-Fijaya`.
-- [x] Pengetatan Inbound Rules: Membatasi akses port 22 (SSH) hanya dari IP Admin.
-- [x] Membuka port 80 (HTTP) untuk akses web publik.
+- [x] **Git Identity Fix**: Berhasil mengonfigurasi identitas Git global agar kontribusi tercatat dengan benar.
+- [x] **Security Group (Stateful Firewall)**: Membuat `SG-Web-Server-Fijaya` di dalam `proyek-vpc`.
+- [x] **Inbound Rules Hardening**: 
+    - Membatasi akses port 22 (SSH) hanya dari IP publik pribadi (Admin Only).
+    - Membuka port 80 (HTTP) untuk lalu lintas web publik.
+- [x] **Outbound Rules Verification**: Memastikan server memiliki akses keluar penuh (default) untuk update sistem.
+
+![Security Group Config](./security-group-web-config.png)
