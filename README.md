@@ -20,3 +20,11 @@ Halo! Saya **Fijaya Samsudin**. Repository ini adalah bukti perjalanan saya mend
 - [x] Membuat IAM User Admin untuk menghindari penggunaan Root Account (Best Practice).
 - [x] Berhasil login menggunakan user `fijaya-admin` dengan akses Administrator.
 - [x] Mengaktifkan MFA (Multi-Factor Authentication) untuk keamanan ekstra pada akun Admin.
+### 08 Mei 2026: Networking (VPC) - COMPLETED
+- [x] **VPC Deployment**: Berhasil membangun VPC khusus (`proyek-vpc`) menggunakan wizard "VPC and more" untuk memastikan konfigurasi yang rapi.
+- [x] **Multi-AZ Architecture**: Menggunakan 2 Availability Zones untuk standar High Availability (Ketersediaan Tinggi).
+- [x] **Tiered Subnets**: 
+    - 2 Public Subnets (untuk resource yang butuh akses internet langsung).
+    - 2 Private Subnets (untuk resource internal/database agar lebih aman).
+- [x] **Cost Optimization**: Memilih untuk tidak menggunakan NAT Gateway guna menghemat biaya operasional selama fase belajar.
+- [x] **Security Enhancement**: Mengaktifkan **S3 Gateway Endpoint**, memungkinkan akses ke layanan S3 secara privat tanpa melalui internet publik.
