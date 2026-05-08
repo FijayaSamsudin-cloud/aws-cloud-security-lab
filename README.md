@@ -30,8 +30,10 @@ Halo! Saya **Fijaya Samsudin**. Repository ini adalah bukti perjalanan saya mend
 - [x] **Security Enhancement**: Mengaktifkan **S3 Gateway Endpoint**, memungkinkan akses ke layanan S3 secara privat tanpa melalui internet publik.
 
 
-### 09 Mei 2026: Security Groups (Firewall)
-- [x] Membuat Security Group `SG-Web-Server-Fijaya` di dalam VPC Proyek.
-- [x] Konfigurasi Inbound: Membatasi SSH hanya untuk IP pribadi (Security Hardening).
-- [x] Konfigurasi Inbound: Membuka akses HTTP untuk publik.
-- [x] Memahami filosofi Stateful Firewall pada AWS Security Groups.
+### 09 Mei 2026: Security Hardening & Firewall Infrastructure
+- [x] Mendapatkan AWS Credits US$119.97 (Siap untuk lab jangka panjang).
+- [x] Deployment VPC Multi-AZ dengan arsitektur Tiered Subnet (Public & Private).
+- [x] Implementasi S3 Gateway Endpoint (Data Security).
+- [x] Membuat Stateful Firewall (Security Group) `SG-Web-Server-Fijaya`.
+- [x] Pengetatan Inbound Rules: Membatasi akses port 22 (SSH) hanya dari IP Admin.
+- [x] Membuka port 80 (HTTP) untuk akses web publik.
