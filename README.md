@@ -13,7 +13,8 @@ Halo! Saya **Fijaya Samsudin**. Repository ini adalah bukti perjalanan saya mend
 - [x] Setup GitHub & Git Local
 - [x] Configure AWS VPC (Completed)
 - [x] Security Group Hardening (Completed)
-- [ ] Deploy EC2 Instance (Next Step)
+- [x] Deploy EC2 Instance (Completed)
+- [ ] Advanced System Hardening & User Management (Next Step)
 
 
 ### 08 Mei 2026: Identity and Access Management (IAM) & Security
