@@ -14,8 +14,8 @@ Halo! Saya **Fijaya Samsudin**. Repository ini adalah bukti perjalanan saya mend
 - [x] Configure AWS VPC (Completed)
 - [x] Security Group Hardening (Completed)
 - [x] Deploy EC2 Instance (Completed)
-- [ ] Advanced System Hardening & User Management (Next Step)
-
+- [x] Advanced System Hardening & User Management (Next Step)
+- [ ] System Auditing & Web Server Deployment (Next Step)
 
 ### 08 Mei 2026: Identity and Access Management (IAM) & Security
 - [x] Mengecek Billing Dashboard (Memastikan Free Tier aktif).
@@ -32,7 +32,7 @@ Halo! Saya **Fijaya Samsudin**. Repository ini adalah bukti perjalanan saya mend
 - [x] **Cost Optimization**: Memilih untuk tidak menggunakan NAT Gateway guna menghemat biaya operasional selama fase belajar.
 - [x] **Security Enhancement**: Mengaktifkan **S3 Gateway Endpoint**, memungkinkan akses ke layanan S3 secara privat tanpa melalui internet publik.
 
-![VPC Architecture Success](./vpc-success.png)
+![VPC Architecture Success](./img/vpc-success.png)
 
 
 ### 09 Mei 2026: Security Hardening & Firewall Infrastructure
@@ -43,7 +43,7 @@ Halo! Saya **Fijaya Samsudin**. Repository ini adalah bukti perjalanan saya mend
     - Membuka port 80 (HTTP) untuk lalu lintas web publik.
 - [x] **Outbound Rules Verification**: Memastikan server memiliki akses keluar penuh (default) untuk update sistem.
 
-![Security Group Config](./security-group-web-config.png)
+![Security Group Config](./img/security-group-web-config.png)
 
 
 ### 10 Mei 2026: Compute Provisioning & System Hardening
@@ -52,4 +52,13 @@ Halo! Saya **Fijaya Samsudin**. Repository ini adalah bukti perjalanan saya mend
 - [x] **Timezone Synchronization**: Mengatur timezone ke `Asia/Jakarta` (WIB) untuk akurasi log.
 - [x] **Security Update**: Menjalankan `dnf update` untuk patch keamanan terbaru.
 
-![EC2 Running Status](./ec2-status-running.png)
+![EC2 Running Status](./img/ec2-status-running.png)
+
+
+### 11 Mei 2026: Advanced System Hardening & User Management
+- [x] **User Provisioning**: Membuat user personal `fijaya` untuk menghindari penggunaan user default `ec2-user` (Standard Operational Procedure).
+- [x] **Privilege Escalation Management**: Mengonfigurasi izin `sudo` melalui grup `wheel` untuk kontrol akses administratif yang aman.
+- [x] **SSH Key Handover**: Melakukan migrasi kunci publik (authorized_keys) agar akses ke user personal tetap menggunakan enkripsi kunci privat (.pem).
+- [x] **Permission Hardening**: Mengatur hak akses folder `.ssh` (700) dan file `authorized_keys` (600) untuk mencegah unauthorized access di level filesystem.
+
+![User Login Success](./img/user-fijaya-login.png)
