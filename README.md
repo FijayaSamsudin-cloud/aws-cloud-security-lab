@@ -43,3 +43,12 @@ Halo! Saya **Fijaya Samsudin**. Repository ini adalah bukti perjalanan saya mend
 - [x] **Outbound Rules Verification**: Memastikan server memiliki akses keluar penuh (default) untuk update sistem.
 
 ![Security Group Config](./security-group-web-config.png)
+
+
+### 10 Mei 2026: Compute Provisioning & System Hardening
+- [x] **EC2 Instance Launch**: Berhasil mendeploy server menggunakan Amazon Linux 2023 (t3.micro).
+- [x] **System Identity**: Mengubah hostname menjadi `web-server-lab`.
+- [x] **Timezone Synchronization**: Mengatur timezone ke `Asia/Jakarta` (WIB) untuk akurasi log.
+- [x] **Security Update**: Menjalankan `dnf update` untuk patch keamanan terbaru.
+
+![EC2 Running Status](./ec2-status-running.png)
