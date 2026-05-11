@@ -14,8 +14,9 @@ Halo! Saya **Fijaya Samsudin**. Repository ini adalah bukti perjalanan saya mend
 - [x] Configure AWS VPC (Completed)
 - [x] Security Group Hardening (Completed)
 - [x] Deploy EC2 Instance (Completed)
-- [x] Advanced System Hardening & User Management (Next Step)
-- [ ] System Auditing & Web Server Deployment (Next Step)
+- [x] Advanced System Hardening & User Management (Completed)
+- [x] System Auditing & Legal Compliance (Completed)
+- [ ] Web Server Deployment & Nginx Hardening (Next Step)
 
 ### 08 Mei 2026: Identity and Access Management (IAM) & Security
 - [x] Mengecek Billing Dashboard (Memastikan Free Tier aktif).
@@ -55,10 +56,13 @@ Halo! Saya **Fijaya Samsudin**. Repository ini adalah bukti perjalanan saya mend
 ![EC2 Running Status](./img/ec2-status-running.png)
 
 
-### 11 Mei 2026: Advanced System Hardening & User Management
-- [x] **User Provisioning**: Membuat user personal `fijaya` untuk menghindari penggunaan user default `ec2-user` (Standard Operational Procedure).
-- [x] **Privilege Escalation Management**: Mengonfigurasi izin `sudo` melalui grup `wheel` untuk kontrol akses administratif yang aman.
-- [x] **SSH Key Handover**: Melakukan migrasi kunci publik (authorized_keys) agar akses ke user personal tetap menggunakan enkripsi kunci privat (.pem).
-- [x] **Permission Hardening**: Mengatur hak akses folder `.ssh` (700) dan file `authorized_keys` (600) untuk mencegah unauthorized access di level filesystem.
+### 11 Mei 2026: Advanced System Hardening, User Management & Monitoring
+- [x] **User Provisioning & Privilege Management**: Membuat user personal `fijaya` dan mengonfigurasi izin `sudo` via grup `wheel` untuk menggantikan penggunaan `ec2-user` (Standard Operational Procedure).
+- [x] **SSH Key Migration & Permission Hardening**: Berhasil memindahkan akses `.pem` ke user personal serta mengatur hak akses folder `.ssh` (700) dan `authorized_keys` (600) guna mencegah *unauthorized access*.
+- [x] **System Auditing (CCTV Digital)**: Mengimplementasikan `auditd` untuk memantau aktivitas kritis seperti perubahan konfigurasi SSH, file password, dan setiap eksekusi perintah administratif.
+- [x] **Legal Compliance Banner**: Mengonfigurasi `/etc/issue.net` dan SSH Banner untuk menampilkan peringatan hukum "Authorized Use Only" sebagai standar kepatuhan industri.
+- [x] **Audit Verification**: Melakukan pengujian log menggunakan `aureport` dan `ausearch` untuk memastikan seluruh jejak digital terekam dengan benar berdasarkan AUID (Audit User ID).
 
 ![User Login Success](./img/user-fijaya-login.png)
+![SSH Warning Banner](./img/ssh-banner-warning.png)
+![Audit Log Success](./img/audit-log-check.png)
