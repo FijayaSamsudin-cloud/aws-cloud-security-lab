@@ -81,3 +81,14 @@ Pada tahap ini, fokus utama adalah memperkuat pertahanan internal server (*Inter
 | Nginx Security Headers | User Account Success |
 | :---: | :---: |
 | ![Nginx Hardening Success](./img/nginx-headers-check.png) | ![User Login Success](./img/user-fijaya-login.png) |
+
+
+#### **III. DevOps Workflow & Automation**
+- [x] **Git Integration**: Mengonfigurasi Git pada server Amazon Linux 2023 untuk sinkronisasi kode secara remote.
+- [x] **SSH Key Authentication (Server-to-GitHub)**: Mendeploy SSH Key (Ed25519) pada server untuk akses aman ke repository GitHub tanpa password.
+- [x] **Automated Deployment Workflow**: Mengimplementasikan alur kerja "Local-to-Cloud-to-Server". Perubahan kode dilakukan di VS Code (Laptop), di-push ke GitHub, dan ditarik (*pull*) secara instan ke server produksi.
+- [x] **Ownership Hardening**: Mengatur ulang hak akses direktori `/usr/share/nginx/html` ke user `fijaya` guna mendukung otomatisasi Git tanpa memerlukan akses root yang berisiko.
+
+| Custom Landing Page (Live) | Git Pull Automation |
+| :---: | :---: |
+| ![Landing Page Success](./img/landing-page-neon.png) | ![Git Pull Success](./img/git-pull-check.png) |
