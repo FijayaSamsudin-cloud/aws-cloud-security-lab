@@ -66,3 +66,11 @@ Halo! Saya **Fijaya Samsudin**. Repository ini adalah bukti perjalanan saya mend
 ![User Login Success](./img/user-fijaya-login.png)
 ![SSH Warning Banner](./img/ssh-banner-warning.png)
 ![Audit Log Success](./img/audit-log-check.png)
+
+
+- [x] **Nginx Installation**: Berhasil mendeploy Nginx Web Server pada Amazon Linux 2023.
+- [x] **Information Leakage Prevention**: Mengonfigurasi `server_tokens off` untuk menyembunyikan versi Nginx dari publik (Security by Obscurity).
+- [x] **DDoS Mitigation**: Membatasi `client_body_buffer_size` dan mengatur `timeout` yang ketat untuk mencegah serangan resource exhaustion.
+- [x] **HTTP Security Headers**: Mengimplementasikan `X-Frame-Options`, `X-XSS-Protection`, dan `X-Content-Type-Options` guna memperkuat keamanan pada sisi browser pengguna.
+
+![Nginx Hardening Success](./img/nginx-headers-check.png)
