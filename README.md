@@ -17,8 +17,8 @@ Halo! Saya **Fijaya Samsudin**. Repository ini adalah bukti perjalanan saya mend
 - [x] Advanced System Hardening & User Management (Completed)
 - [x] System Auditing & Legal Compliance (Completed)
 - [x] Web Server Deployment & Nginx Hardening (Completed)
-- [ ] Custom Landing Page & Web Content Deployment (Next Step)
-
+- [x] CI/CD Workflow: Local-GitHub-AWS Integration (Completed)
+- [ ] SSL/HTTPS Encryption (Next Step)
 
 ### 08 Mei 2026: Identity and Access Management (IAM) & Security
 - [x] Mengecek Billing Dashboard (Memastikan Free Tier aktif).
