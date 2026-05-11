@@ -10,13 +10,15 @@ Halo! Saya **Fijaya Samsudin**. Repository ini adalah bukti perjalanan saya mend
 * **DevOps & Automation**
 
 ## Progress Saat Ini:
-- [x] Setup GitHub & Git Local
-- [x] Configure AWS VPC (Completed)
-- [x] Security Group Hardening (Completed)
-- [x] Deploy EC2 Instance (Completed)
+- [x] Setup GitHub & Git Local (Completed)
+- [x] Configure AWS VPC & Networking (Completed)
+- [x] Security Group & Firewall Hardening (Completed)
+- [x] Deploy EC2 Instance (Amazon Linux 2023) (Completed)
 - [x] Advanced System Hardening & User Management (Completed)
 - [x] System Auditing & Legal Compliance (Completed)
-- [ ] Web Server Deployment & Nginx Hardening (Next Step)
+- [x] Web Server Deployment & Nginx Hardening (Completed)
+- [ ] Custom Landing Page & Web Content Deployment (Next Step)
+
 
 ### 08 Mei 2026: Identity and Access Management (IAM) & Security
 - [x] Mengecek Billing Dashboard (Memastikan Free Tier aktif).
@@ -56,21 +58,26 @@ Halo! Saya **Fijaya Samsudin**. Repository ini adalah bukti perjalanan saya mend
 ![EC2 Running Status](./img/ec2-status-running.png)
 
 
-### 11 Mei 2026: Advanced System Hardening, User Management & Monitoring
-- [x] **User Provisioning & Privilege Management**: Membuat user personal `fijaya` dan mengonfigurasi izin `sudo` via grup `wheel` untuk menggantikan penggunaan `ec2-user` (Standard Operational Procedure).
-- [x] **SSH Key Migration & Permission Hardening**: Berhasil memindahkan akses `.pem` ke user personal serta mengatur hak akses folder `.ssh` (700) dan `authorized_keys` (600) guna mencegah *unauthorized access*.
-- [x] **System Auditing (CCTV Digital)**: Mengimplementasikan `auditd` untuk memantau aktivitas kritis seperti perubahan konfigurasi SSH, file password, dan setiap eksekusi perintah administratif.
-- [x] **Legal Compliance Banner**: Mengonfigurasi `/etc/issue.net` dan SSH Banner untuk menampilkan peringatan hukum "Authorized Use Only" sebagai standar kepatuhan industri.
-- [x] **Audit Verification**: Melakukan pengujian log menggunakan `aureport` dan `ausearch` untuk memastikan seluruh jejak digital terekam dengan benar berdasarkan AUID (Audit User ID).
+### 11 Mei 2026: Advanced System Hardening & Web Deployment 🛡️
 
-![User Login Success](./img/user-fijaya-login.png)
-![SSH Warning Banner](./img/ssh-banner-warning.png)
-![Audit Log Success](./img/audit-log-check.png)
+Pada tahap ini, fokus utama adalah memperkuat pertahanan internal server (*Internal Hardening*) dan melakukan deployment Web Server dengan standar keamanan tinggi.
 
+#### **I. Identity, Monitoring & Compliance**
+- [x] **User & Privilege**: Migrasi dari `ec2-user` ke user personal `fijaya` dengan hak akses `sudo` terbatas via grup `wheel`.
+- [x] **SSH Hardening**: Implementasi SSH Key Authentication dan pengaturan permission ketat pada folder `.ssh` (700).
+- [x] **System Auditing**: Aktivasi `auditd` (CCTV Digital) untuk merekam setiap aktivitas administratif sensitif.
+- [x] **Legal Banner**: Pemasangan banner peringatan hukum pada akses login SSH via `/etc/issue.net`.
 
-- [x] **Nginx Installation**: Berhasil mendeploy Nginx Web Server pada Amazon Linux 2023.
-- [x] **Information Leakage Prevention**: Mengonfigurasi `server_tokens off` untuk menyembunyikan versi Nginx dari publik (Security by Obscurity).
-- [x] **DDoS Mitigation**: Membatasi `client_body_buffer_size` dan mengatur `timeout` yang ketat untuk mencegah serangan resource exhaustion.
-- [x] **HTTP Security Headers**: Mengimplementasikan `X-Frame-Options`, `X-XSS-Protection`, dan `X-Content-Type-Options` guna memperkuat keamanan pada sisi browser pengguna.
+| SSH Login Banner | Audit Log Verification |
+| :---: | :---: |
+| ![SSH Warning Banner](./img/ssh-banner-warning.png) | ![Audit Log Success](./img/audit-log-check.png) |
 
-![Nginx Hardening Success](./img/nginx-headers-check.png)
+#### **II. Nginx Web Server Hardening**
+- [x] **Minimal Installation**: Deployment Nginx pada Amazon Linux 2023.
+- [x] **Information Masking**: Mengaktifkan `server_tokens off` untuk menyembunyikan identitas versi server.
+- [x] **DDoS Mitigation**: Optimasi buffer size dan timeout untuk membatasi konsumsi sumber daya berlebih.
+- [x] **Security Headers**: Implementasi `X-Frame-Options`, `X-XSS-Protection`, dan `X-Content-Type-Options`.
+
+| Nginx Security Headers | User Account Success |
+| :---: | :---: |
+| ![Nginx Hardening Success](./img/nginx-headers-check.png) | ![User Login Success](./img/user-fijaya-login.png) |
